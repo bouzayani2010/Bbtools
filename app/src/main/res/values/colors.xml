@@ -3,4 +3,79 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="colorPrimary1">#0154A0</color>
+    <color name="colorPrimaryDark1">#0154A0</color>
+    <color name="color_header_view">#E600549f</color>
+    <color name="usek_blue_80">#CC1362A7</color>
+    <color name="blue">#00549f</color>
+    <color name="blue90__">#E600549f</color>
+    <color name="blue70__">#B300549f</color>
+    <color name="light_blue">#4eadde</color>
+    <color name="blue90">#E600549f</color>
+    <color name="blue90_">#E60e5d9a</color>
+    <color name="blue60">#994f87b4</color>
+    <color name="blue80">#CC0e5d9a</color>
+    <color name="blue_settings">#CC1662a5</color>
+    <color name="blue50">#800e5d9a</color>
+    <color name="blue30">#4D4f87b4</color>
+    <color name="blue20">#334f87b4</color>
+    <color name="blue10">#1A4f87b4</color>
+    <color name="blue_usek_90">#E60055a0</color>
+    <color name="opacityWhite">#ffffff</color>
+    <color name="opacityWhite1">#99ffffff</color>
+    <color name="schedule_details_font">#fdf3e4</color>
+    <color name="light_gray">#e1e1e1</color>
+    <color name="white30">#ffffff</color>
+    <color name="white301">#4Dffffff</color>
+    <color name="grayPurple">#868686</color>
+    <color name="dark_gray">#8b8b8b</color>
+    <color name="lightGreen2">#80b09a</color>
+    <color name="lightAzure">#dae3f0</color>
+    <color name="dividerGray">#bebebe</color>
+    <color name="whiteGray">#ccffffff</color>
+    <color name="lightGray3">#cbc9c9</color>
+    <color name="orange">#F4A04A</color>
+    <color name="color_title_campus">#52AEDF</color>
+    <color name="blue_calendar">#1999d7</color>
+    <color name="colorAccent1">#FFFFFF</color>
+    <color name="lightEmergencyBlue">#66007bb1</color>
+    <color name="green">#91a864</color>
+    <color name="coralRed">#eb6145</color>
+    <color name="red">#eb6145</color>
+    <color name="red_">#F95553</color>
+
+    <color name="holo_red_light">#ff4444</color>
+
+    <color name="calendar_red">#f8908c</color>
+
+    <color name="disable_coralRed">#f29c8a</color>
+    <color name="azure">#73baee</color>
+    <color name="gray">#E1E1E1</color>
+
+    <color name="twittir_color">#cde4f1</color>
+    <color name="facebook_color">#c5d0eb</color>
+    <color name="social_color_back">#e3e2e2</color>
+    <color name="webview_color_back">#ededed</color>
+    <color name="webview_color_font1">#d9d9d9</color>
+    <color name="webview_color_font2">#d6d6d6</color>
+    <color name="webview_color_font3">#e4e4e4</color>
+
+    <color name="caldroid_middle_gray">#888</color>
+
+    <color name="header_list_people">#d5d5d5</color>
+    <color name="header_char_people">#5f5f5f</color>
+    <color name="black70">#B3000000</color>
+    <color name="black50">#80000000</color>
+    <color name="blue_light">#7fbcdf</color>
+    <color name="gray_people">#979797</color>
+    <color name="gray_transparent">#80d5d5d5</color>
+    <color name="lightPink">#f0eeee</color>
+
+    <color name="lightPurpleChat2">#D797CB</color>
+    <color name="lightPurpleChat">#BB6AAB</color>
+    <color name="transparent">#0000549f</color>
 </resources>
+
+
+

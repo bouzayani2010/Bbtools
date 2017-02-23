@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Details>
+    <detaila>
+        <detail> attribute 1 of detail a </detail>
+        <detail> attribute 2 of detail a </detail>
+        <detail> attribute 3 of detail a </detail>
+    </detaila>
+    <detailb>
+        <detail> attribute 1 of detail b </detail>
+        <detail> attribute 2 of detail b </detail>
+    </detailb>
+</Details>

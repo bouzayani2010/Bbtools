@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Bbtools</string>
+    <string name="title_activity_xml">XmlActivity</string>
 </resources>
