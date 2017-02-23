@@ -8,4 +8,24 @@ import com.thoughtworks.xstream.annotations.XStreamAlias;
 
 @XStreamAlias("detail")
 public class Detail {
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    String message;
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    @XStreamAlias("code")
+    String code;
+
+    public String getMessage() {
+        return message;
+    }
+
+    public String getCode() {
+        return code;
+    }
 }

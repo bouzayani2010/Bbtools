@@ -11,15 +11,15 @@ import java.util.List;
  */
 @XStreamAlias("detailb")
 public class Detailb {
-    public List<String> getDetail() {
+    public List<Detail> getDetail() {
         return detail;
     }
 
-    public void setDetail(List<String> detail) {
+    public void setDetail(List<Detail> detail) {
         this.detail = detail;
     }
 
     @XStreamImplicit(itemFieldName="detail")
-    private List<String> detail= new ArrayList();;
+    private List<Detail> detail= new ArrayList();;
 
 }

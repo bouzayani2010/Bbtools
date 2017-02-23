@@ -7,14 +7,13 @@ import android.util.Log;
 import android.widget.Toast;
 
 import com.thoughtworks.xstream.XStream;
-import com.thoughtworks.xstream.annotations.XStreamAlias;
-import com.thoughtworks.xstream.converters.Converter;
+import com.thoughtworks.xstream.converters.extended.ToAttributedValueConverter;
 import com.thoughtworks.xstream.io.xml.DomDriver;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.Map;
+import java.util.List;
 
 
 public class XmlActivity extends AppCompatActivity {
@@ -35,20 +34,38 @@ public class XmlActivity extends AppCompatActivity {
 
         try {
 
-           // xStream.registerConverter((Converter) new MapEntryConverter());
+            // xStream.registerConverter((Converter) new MapEntryConverter());
             xStream.alias("Details", Details.class);
             xStream.alias("detaila", Detaila.class);
             xStream.alias("detailb", Detailb.class);
             xStream.alias("detail", String.class);
-            xStream.addImplicitCollection(Detaila.class,"detail", String.class);
-            xStream.addImplicitCollection(Detailb.class,"detail", String.class);
+            xStream.registerConverter(new ToAttributedValueConverter(Detail.class, xStream.getMapper(),
+                    xStream.getReflectionProvider(), xStream
+                    .getConverterLookup(), "message"));
+            xStream.addImplicitCollection(Detaila.class, "detail", Detail.class);
+            xStream.addImplicitCollection(Detailb.class, "detail", Detail.class);
+            //xStream.addImplicitCollection(Detail.class,"message", String.class);
+            xStream.useAttributeFor(Detail.class, "code");
+
             InputStream inputStream = assetManager.open("detail.xml");
             String xml = readFully(inputStream);
             Toast.makeText(getApplicationContext(), xml, Toast.LENGTH_LONG).show();
             Details details = (Details) xStream.fromXML(xml);
-            Log.d("detail",  " : " + details.toString());
-            Log.d("detail a",  " : " + details.detaila.getDetail().toString());
-            Log.d("detail b",  " : " + details.detailb.getDetail().toString());
+            Log.d("detail", " : " + details.toString());
+            Log.d("detail a", " : " + details.detaila.getDetail().toString());
+            Log.d("detail b", " : " + details.detailb.getDetail().toString());
+
+            List<Detail> details_of_a = details.detaila.getDetail();
+            for (Detail det : details_of_a) {
+                Log.d("detail a message", " : " + det.getMessage());
+                Log.d("detail a code", " : " + det.getCode());
+            }
+            List<Detail> details_of_b = details.detailb.getDetail();
+            for (Detail det : details_of_b) {
+                Log.d("detail b message", " : " + det.getMessage());
+                Log.d("detail b code", " : " + det.getCode());
+            }
+
 
         } catch (IOException e) {
             e.printStackTrace();
