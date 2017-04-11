@@ -53,6 +53,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/project/bbtools/MainActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/project/bbtools/MapEntryConverter.java">
           <value>
             <set />
@@ -63,7 +68,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/project/bbtools/User.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/project/bbtools/XmlActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
           <value>
             <set />
           </value>
@@ -74,6 +89,86 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/res/values/detail.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Rotana_new_app_android/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Rotana_new_app_android/app/src/main/java/com/rotana/rotanahotels/ContainerActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Rotana_new_app_android/app/src/main/java/com/rotana/rotanahotels/GcmTask.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Rotana_new_app_android/app/src/main/java/com/rotana/rotanahotels/adapter/RoomSuiteSwipeDetailsAdapter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Rotana_new_app_android/app/src/main/java/com/rotana/rotanahotels/container/BaseFragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Rotana_new_app_android/app/src/main/java/com/rotana/rotanahotels/container/booking/BookingMainFragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Rotana_new_app_android/app/src/main/java/com/rotana/rotanahotels/container/booking/BookingRoomDetailFragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Rotana_new_app_android/app/src/main/java/com/rotana/rotanahotels/container/home/HomeFragment1.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Rotana_new_app_android/app/src/main/java/com/rotana/rotanahotels/container/hotels/RoomSuitesSwipeDetailsFragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Rotana_new_app_android/app/src/main/java/com/rotana/rotanahotels/container/hotels/RoomsSuitesFragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Rotana_new_app_android/app/src/main/java/com/rotana/rotanahotels/utils/Utils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Rotana_new_app_android/app/src/main/java/com/rotana/rotanahotels/widget/CustomViewPager.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Rotana_new_app_android/app/src/main/res/layout/parallax_room_list_row.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Rotana_new_app_android/app/src/main/res/layout/parallax_rooms_fragment.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Rotana_new_app_android/app/src/main/res/layout/viewpager1.xml">
           <value>
             <set />
           </value>
