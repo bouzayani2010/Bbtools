@@ -2,6 +2,7 @@ package com.project.bbtools;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.os.Environment;
@@ -17,7 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements View.OnClickListener {
 
     public static final String CAMERA_IMAGE_BUCKET_NAME =
             Environment.getExternalStorageDirectory().toString() + "/DCIM/Camera";
@@ -26,6 +27,7 @@ public class MainActivity extends Activity {
             getBucketId(CAMERA_IMAGE_BUCKET_NAME);
     private Button btn_firebase;
     private DatabaseReference mDatabase;
+    private Button text_to_speach;
 
     private static String getBucketId(String path) {
         return String.valueOf(path.toLowerCase().hashCode());
@@ -45,6 +47,9 @@ public class MainActivity extends Activity {
         gridview = (GridView) findViewById(R.id.gridview);
         gridview.setAdapter(new ImageAdapter(this));
         button1 = (Button) this.findViewById(R.id.xml);
+
+        text_to_speach = (Button) this.findViewById(R.id.text_to_speach);
+        text_to_speach.setOnClickListener(this);
         btn_firebase = (Button) this.findViewById(R.id.firebase);
         btn_firebase.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,8 +62,8 @@ public class MainActivity extends Activity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-             //   images = getCameraImages(MainActivity.this);
-             //   gridview.setAdapter(new ImageAdapter(MainActivity.this, images));
+                //   images = getCameraImages(MainActivity.this);
+                //   gridview.setAdapter(new ImageAdapter(MainActivity.this, images));
             }
         });
 
@@ -84,6 +89,12 @@ public class MainActivity extends Activity {
         }
         cursor.close();
         return result;
+    }
+
+    @Override
+    public void onClick(View view) {
+        Intent intent = new Intent(MainActivity.this, Speach.class);
+        MainActivity.this.startActivityForResult(intent,100);
     }
 }
 
